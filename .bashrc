@@ -100,5 +100,5 @@ fi
 
 # autostart tmux
 if [[ ! $TERM =~ screen ]]; then
-    exec tmux
+    tmux attach || tmux new
 fi
