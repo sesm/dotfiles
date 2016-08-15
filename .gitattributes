@@ -1,0 +1,2 @@
+# Fix for tmux.conf on Cygwin
+.tmux.conf eol=lf
