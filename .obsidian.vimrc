@@ -28,10 +28,9 @@ nmap gd :definition
 
 " Fold/unfold like IJ
 exmap fold obcommand editor:toggle-fold
+exmap foldall obcommand editor:fold-all
+exmap unfoldall obcommand editor:unfold-all
 nmap <C--> :fold
-
 "https://github.com/esm7/obsidian-vimrc-support/issues/209
-"exmap foldall obcommand editor:fold-all
-"exmap unfoldall obcommand editor:unfold-all
 "nmap <C-_> :foldall
 "nmap <C-+> :unfoldall
