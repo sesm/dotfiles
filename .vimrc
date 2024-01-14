@@ -29,3 +29,11 @@ endif
 
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
+
+" Use H and L for beginning/end of line
+nmap H ^
+nmap L $
+
+" Use J and K to move text blocks in visual mode
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv

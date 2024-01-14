@@ -1,9 +1,14 @@
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
-" I like using H and L for beginning/end of line
+" Use H and L for beginning/end of line
 nmap H ^
 nmap L $
+" Use J and K to move text blocks in visual mode
+exmap lineup obcommand editor:swap-line-up
+exmap linedown obcommand editor:swap-line-down
+nmap K :lineup
+nmap J :linedown
 " Quickly remove search highlights
 nmap <F9> :nohl
 

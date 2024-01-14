@@ -1,0 +1,7 @@
+" Use H and L for beginning/end of line
+map H ^
+map L $
+
+" Use J and K to move text blocks in visual mode
+map J <Action>(MoveLineDown)
+map K <Action>(MoveLineUp)
