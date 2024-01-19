@@ -35,5 +35,11 @@ nmap <C--> :fold
 "nmap <C-_> :foldall
 "nmap <C-+> :unfoldall
 
-" Split excommand like IJ
+" Pane split/switch
+exmap focusRight obcommand editor:focus-right
+exmap focusLeft obcommand editor:focus-left
 exmap vsplit obcommand workspace:split-vertical
+
+nmap <C-w>l :focusRight
+nmap <C-w>h :focusLeft
+nmap <C-w>v :vsplit
