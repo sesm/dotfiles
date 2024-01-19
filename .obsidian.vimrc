@@ -34,3 +34,6 @@ nmap <C--> :fold
 "https://github.com/esm7/obsidian-vimrc-support/issues/209
 "nmap <C-_> :foldall
 "nmap <C-+> :unfoldall
+
+" Split excommand like IJ
+exmap vsplit obcommand workspace:split-vertical
