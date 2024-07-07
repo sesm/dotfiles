@@ -1,3 +1,6 @@
+" Notes:
+" - Mappings to <Action> don't work with noremap, source: https://github.com/JetBrains/ideavim?tab=readme-ov-file#executing-actions
+
 " Use H and L for beginning/end of line
 map H ^
 map L $
@@ -5,3 +8,6 @@ map L $
 " Use J and K to move text blocks in visual mode
 map J <Action>(MoveLineDown)
 map K <Action>(MoveLineUp)
+
+" Redo
+map U <Action>($Redo)

@@ -1,3 +1,6 @@
+" Notes:
+" - repo: https://github.com/esm7/obsidian-vimrc-support
+
 " Have j and k navigate visual lines rather than logical ones
 nmap j gj
 nmap k gk
@@ -43,3 +46,7 @@ exmap vsplit obcommand workspace:split-vertical
 nmap <C-w>l :focusRight
 nmap <C-w>h :focusLeft
 nmap <C-w>v :vsplit
+
+" Redo
+unmap U
+nmap U :redo
